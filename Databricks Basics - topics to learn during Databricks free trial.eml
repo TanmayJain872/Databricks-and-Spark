@@ -1,0 +1,281 @@
+Delivered-To: tanmayjain872@gmail.com
+Received: by 2002:a05:7010:4e05:b0:313:fd05:eb1a with SMTP id v5csp2266632mdp;
+        Tue, 8 Nov 2022 03:16:31 -0800 (PST)
+X-Google-Smtp-Source: AMsMyM4XpV0xKEkXRhTUgXjaPETpuU70hIebdVQ4XtO+dN/kypppog8B54jrcF/JaLx3+II7FN4s
+X-Received: by 2002:a05:6a00:234c:b0:56c:f6e6:976 with SMTP id j12-20020a056a00234c00b0056cf6e60976mr55726536pfj.32.1667906191085;
+        Tue, 08 Nov 2022 03:16:31 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1667906191; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=FVj5VoXVEraExXOZUan89klHyaRp35rc4HZFFUlkVIvJTsdEPdLfpXhbsr+3mcFZaa
+         zAMaaMYiAnkI5u55sonowfhlK3x+KAqeJi4B8/HYLWNmAekG/+hQxWEintms/2IHLhY1
+         ktQxqFO44RBlcEuSGpOe4v6ySyPKzk7eDVVNd1io2aiGmZ30ud3OabMd/H0NzPcoGTgn
+         sOYXtDzMq635E9cDjXRSFLIV4iE0RjPycUBWb/6RlEPwK+TZHsjVvs2flkhOjPVrVTrH
+         v2cFuBkKLYqIxPn7+46DH5ElZDQiknYJ1loyQMdTYzykNaBBnDcw//wgaYami7hOOBKH
+         o+zQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :message-id:date:thread-index:thread-topic:subject:to:from
+         :dkim-signature;
+        bh=YTpx3sgY9gw1aVaskOwEza1oUH0vW7WLGAz2HNMKKxI=;
+        b=k6u+BcoL1E2kw9dCI+KrzuXzdhBdA6ZXWL760vMBiUwVs0ixIKtWVZfW1+Ui5LlfKZ
+         p0dT6RTtrpuSx+/9TGsuyivTUOgYDKusGbyAFeEqm3cK7Cs2GaW4RBqjIxFb6AqSsYWm
+         zymSfZ1UX70euV52D9vQ32A+AuV97ozPAX3ptwQ7hTLmPDBW39vlIpmbZk9J5bzfiXG7
+         7ixjUkibpmPFVSVPjQl4yLbGDqmpFTcXnxfULc4zeSwin6p8QGodpQ2yz9EpsBKP3SWp
+         4+G2bjYOQM9j9fkeZJw9xFxN74MqsfnJ8MygT+PhHkjGmq86eSKwIPHdT8UbK3b4a0gU
+         ffcQ==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=ESvIUCWA;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of rohitjain100@hotmail.com designates 40.92.23.16 as permitted sender) smtp.mailfrom=rohitjain100@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+Return-Path: <rohitjain100@hotmail.com>
+Received: from NAM12-MW2-obe.outbound.protection.outlook.com (mail-mw2nam12olkn2016.outbound.protection.outlook.com. [40.92.23.16])
+        by mx.google.com with ESMTPS id qi5-20020a17090b274500b0020940c79fc5si17211653pjb.51.2022.11.08.03.16.30
+        for <tanmayjain872@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 08 Nov 2022 03:16:31 -0800 (PST)
+Received-SPF: pass (google.com: domain of rohitjain100@hotmail.com designates 40.92.23.16 as permitted sender) client-ip=40.92.23.16;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hotmail.com header.s=selector1 header.b=ESvIUCWA;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of rohitjain100@hotmail.com designates 40.92.23.16 as permitted sender) smtp.mailfrom=rohitjain100@hotmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hotmail.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=ImN71e81dvKGI2WkvfubQAknTMYih1ax3xUJgdTpHQFtjRZO5goQuYBkiaqluA0D7EbNt9efbZ4F76nmVdj3txJO/qkAfJd1IOOPqlLphgSvsr5pbUt8r5FjfWJCsJfy4z6VwVzUndDegDXaPB+H8gR+HT3dbEGrCHeAUdE12CM1pbwBR7Aw1zP87IZvBLFmGtdMtTdg6CG1RCkdKryjDkiIpuQh41NmdqpcBAGSPVHhXPVf+ih2tPQBEk/cHq1ytn1mFrimhZv7jS3oyKr+gCyfrTISfyrXSdviEMH3NDeJJq8+YrL78XeO5WT4kj9YS+B/JuVfv74VxdDd6TFCCQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=YTpx3sgY9gw1aVaskOwEza1oUH0vW7WLGAz2HNMKKxI=;
+ b=lo9nCawuj8OP5uytnJMc//WGOYZlX6KHbtera98OKA7gPkwGR9Ye6sGw7hYyS5kCXBtFZ+r4TEgg6Tl4C5qF1lARYzbJpH3et7PU0DUB0RrFnCdgr5Q4OCqS57zoE/7icvrqjSnNHn68/YWVyNQM40PjTF+BHH7ET4CdPIIth/ALOJcB9k5pKpkfx9kLpI1KlBEYCTa4BSJTW+YY37N3kxOGUsiqnsuAGlvEwihSdaAWjwu/E86FT0eoAY5ySSnise8vLjtKr6S6bVX3Xx/+S4jnXtZdnz1z2l56xFGV0JbWucCo2WGpSG14wqqsrIUrQRwmlBaHu8Ui0g6/WP4JeQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=YTpx3sgY9gw1aVaskOwEza1oUH0vW7WLGAz2HNMKKxI=;
+ b=ESvIUCWAk+yb92Y4Oy9gDUfTiT1pcRnUaeqHEGifmtw04JMeF/by+k9PsaL5MWO7ld45Byx+K1az6nBdcpj4I22MeG9T+DmvpYufPclpeYy9KQTdq/oNBHcMhy+luHfwtlO0JDluQ72pUECnONlaSB74HmfokgZV+D3IPjpmRXrmG/R67hG4Iz6t7beVX1oXGu46Ei+rnVLipH7AAEeeTbiDnwoOSvRwRxvrTazURIyhsr8VUgyEYd5Tbs7ZTGEwQiP1sGZnsK3zlnQiYNWJ9vECmD86MJXuZlJtsTDuQpaGxLIq3myLwHUNdOHncIRaoSZDaMzp8SZ7wqUGJPKClA==
+Received: from DM6PR14MB3435.namprd14.prod.outlook.com (2603:10b6:5:1ef::19)
+ by BN8PR14MB3379.namprd14.prod.outlook.com (2603:10b6:408:d6::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5813.12; Tue, 8 Nov
+ 2022 11:16:30 +0000
+Received: from DM6PR14MB3435.namprd14.prod.outlook.com
+ ([fe80::b657:97cb:a287:782b]) by DM6PR14MB3435.namprd14.prod.outlook.com
+ ([fe80::b657:97cb:a287:782b%7]) with mapi id 15.20.5813.011; Tue, 8 Nov 2022
+ 11:16:29 +0000
+From: Rohit Jain <rohitjain100@hotmail.com>
+To: tanmay jain <tanmayjain872@gmail.com>
+Subject: Databricks Basics - topics to learn during Databricks free trial
+Thread-Topic: Databricks Basics - topics to learn during Databricks free trial
+Thread-Index: AQHY82MgET4kvLADLE+q8bZYAitKDA==
+Date: Tue, 8 Nov 2022 11:16:29 +0000
+Message-ID:
+ <DM6PR14MB3435A5B53D7CCC5DA4BD73969A3F9@DM6PR14MB3435.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [KBPmixSs30E+4P2ZuTE6oF9DW6fpwA21XjQ2rJALjvQWQ3OHozIZU/Ihu3A0oORF]
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: DM6PR14MB3435:EE_|BN8PR14MB3379:EE_
+x-ms-office365-filtering-correlation-id: 21571103-3fd4-411a-2128-08dac17aaf6a
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ ddtPLql3c2lX9MCxIZvznI3+fL4qC8SWzyRzlM6a4P+fimZJWxnKs5FFmnDXrAqyTJU948lRYoXQEzCxDapyRoPfTnQhFQTT+lPulov6dsTtpg0Y9Fry9p3KUEeDyJW2nrFClZf3pcm+5IedZOIeL5CmWv2Qm5tE7m3CudxdO58QjUJrbLJkO4kiMFX0IVYy+9DbYWyoAuucFNbXemnYbJdj8UcvwKCmzpu+0S717EZeHMXR3r4R5ZAPtJcx7PgLC0vuhOnwvMKksQ7fmluW8biEfVGT5wYfkoUaDDMA/PkNp1Na+A/AAZi6+VGA9vVXgGDbXgzgIE/S8STTEr811JFmEUufERrU2jq+vwSgrKVoRxO4CSKRherDH5Uyu2s6SYpRq9aowQ0d2PuSERDMMWaoadze71MHXMSItjgxiI+B6j1b8eyI4O7J4TCVBdHpUXRphZqoRWo94j0H4+A22scVdBE4uK+x+oOP+jlUqi8kXe4wFZjZ+eHGGkk0w7m21JGqOF2SQ3tK3pYYCwOqMVFou7pC/D0aoWOgJqvSvIhEgdsSymAAgD8MzAKOtpl9p7rmOwWYJoGlfCF5mblE0bbtGdIMiS9R6OpX/h3K2tsvWGwAVqI3OTewMqGFpqqerpxflaELj0ZrLuWQcX0UwqZrzuitzJXeQFydzl41c4YrwVrekVZ34U7zdmtyph4Rdu6u1ijeh5WMHMai9W1PfMFnFvhcXn1wdBlszkU+/s8=
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?Y+b2yODlve7cA2XCyHT8q04QsjL7Fh9EnUqaRPt/zCgDb/PQjE3OCa8O?=
+ =?Windows-1252?Q?1uSAtKbTXXQFXv3Ac7p7ZlBHqctRYzY7Cs4GWcmQZnmL6lHQrlNrnYNz?=
+ =?Windows-1252?Q?omE9RfOGxvscGKEgefMZCAF7it2XB0fIG0Qs+M8DdAMZOYwW5VHF1dho?=
+ =?Windows-1252?Q?w+K4bPOjBNl7cq8+9Ema3leQSwRXTFEjTwrjy15haGZ/yYnKqYoMTH/9?=
+ =?Windows-1252?Q?GwaZtjIhua1xiBz98/1P02jHP3QSwzxOXim+K78czD+L/wBECWrMtJmy?=
+ =?Windows-1252?Q?SvivtFAsuZ+53UL/+6UjMfb/YixVu11HC+F0yqeuflctnLGHqSPRlNW5?=
+ =?Windows-1252?Q?trPZeLzZRvtPv0CdLSEsDYEgiVM5eK5QKhj1MMFt2LjEHMuOR9KEsxF1?=
+ =?Windows-1252?Q?IryQvztM/Npd600XLgmZX4AD5IjcAwWebeaKgImMY/2F5y/qpKHjicrE?=
+ =?Windows-1252?Q?XuMJDfHX4JX/i208Bkp0FzZZpgr0FWzPj8pYRcKBpm0y1s+oo7EnU9Tc?=
+ =?Windows-1252?Q?WfJaGok9jbF/+YYTLipDmYT3jT1ybNYXUx9ccCnEffc9Waqh7hSmuvlj?=
+ =?Windows-1252?Q?aGAZIXEXhUX/vrBXizPKiCEEx+mtw18Wava6Kb5pakiielaEvqartcmD?=
+ =?Windows-1252?Q?tznFZTCOWQ2xVzv+Hyf+duuZIVtLTyP2UzDZj0RWtg0eFesj4G+di9Gf?=
+ =?Windows-1252?Q?L7uUL3aaSLhdQEvVizzpAQ87cwGo5nr3flEKeep6jFwX3xEUM6i8tOcy?=
+ =?Windows-1252?Q?rTIpHNElh44tdTQrxddTTuhp8BFtHNq5UzumGI5FuPe2G7YcFIIvlTbC?=
+ =?Windows-1252?Q?88ACy77Yqy8Zz87UGe6SqsTS1qZ0kYanZD/TEilazHX6zK6Ns9fc4O4R?=
+ =?Windows-1252?Q?hlKt4rgLmNX1FNkTMC+tcXqflvxW8ttjPAxZDTQlhhQk4mii5kMdD6Hn?=
+ =?Windows-1252?Q?MKDCyApYoPrEn6HPj/cAIUKAOmAmuhaKuxoB/I2S5AUoKG5XJ9NzuVpt?=
+ =?Windows-1252?Q?jEL96C4gravAtiDoo8SzUBNhIGEHaOpHyD5Bdf4fxaMMOtCxszlYyGaL?=
+ =?Windows-1252?Q?jRn3/aF/UCpSrp7JIVqNeEQwI/jff9Bqz8UlOf3nWdz86gXRwS8eNkWA?=
+ =?Windows-1252?Q?iuk2ObUMdVWHl4sz5eQCwHjC25351BZ6SQWbwM5XJfLegB/tCC0tGcCk?=
+ =?Windows-1252?Q?Kf10dljbXwwjpOJu2c32EV3HD1CHnJEpS6BWvghIzXxLBXslKzVfO6j8?=
+ =?Windows-1252?Q?J0ijgL08Ttl7sQh1wltk8SS72XShtkevXTJ7uCHpPdhkQ4nmgUJOnT/H?=
+ =?Windows-1252?Q?gsngDBh/UWwoVxYI9AsaLyuG9B3AhtXUaE8yatTZ9yd7Ca0MGb8Sg2ot?=
+ =?Windows-1252?Q?3f/9b01U4ImZoA5w0+26MHflIt9JEcaOJiz23U5lCatOmBrYehwmvdjV?=
+ =?Windows-1252?Q?0KErTnh5wH5q4itC42NneA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR14MB3435A5B53D7CCC5DA4BD73969A3F9DM6PR14MB3435namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-cd57b.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DM6PR14MB3435.namprd14.prod.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 21571103-3fd4-411a-2128-08dac17aaf6a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 08 Nov 2022 11:16:29.9016
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR14MB3379
+
+--_000_DM6PR14MB3435A5B53D7CCC5DA4BD73969A3F9DM6PR14MB3435namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Apache Spark=99 Programming with Databricks
+https://www.databricks.com/learn/training/catalog/apache-spark-programming
+
+Syllabus outline:
+
+  *   Spark overview
+  *   Databricks platform overview
+  *   Spark SQL
+  *   DataFrame reader, writer, transformation, and aggregation
+  *   Datetimes
+  *   Complex types
+
+  *   User-defined functions (UDFs) and vectorized UDFs
+  *   Spark internals
+  *   Query optimization
+  *   Partitioning
+  *   Streaming API
+  *   Delta Lake
+
+[https://www.databricks.com/wp-content/uploads/2021/08/Academy-OG.jpg]<http=
+s://www.databricks.com/learn/training/catalog/apache-spark-programming>
+Apache Spark=99 Programming with Databricks =96 Databricks<https://www.data=
+bricks.com/learn/training/catalog/apache-spark-programming>
+Description. In this course, you will explore the fundamentals of Apache Sp=
+ark and Delta Lake on Databricks. You will learn the architectural componen=
+ts of Spark, the DataFrame and Structured Streaming APIs, and how Delta Lak=
+e can improve your data pipelines.
+www.databricks.com
+
+
+--_000_DM6PR14MB3435A5B53D7CCC5DA4BD73969A3F9DM6PR14MB3435namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+Apache Spark=99 Programming with Databricks<br class=3D"ContentPasted0">
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+<a href=3D"https://www.databricks.com/learn/training/catalog/apache-spark-p=
+rogramming" id=3D"LPlnkOWALinkPreview">https://www.databricks.com/learn/tra=
+ining/catalog/apache-spark-programming</a><br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+Syllabus outline:</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+<ul class=3D"body-content" style=3D"margin-top:0px;margin-bottom:12px;color=
+:rgb(253, 80, 0);font-family:barlow, Helvetica, Arial, sans-serif;font-size=
+:17px;text-align:left;background-color:rgb(255, 255, 255)">
+<li style=3D"color:black" class=3D"ContentPasted1">Spark overview</li><li s=
+tyle=3D"color:black" class=3D"ContentPasted1">Databricks platform overview<=
+/li><li style=3D"color:black" class=3D"ContentPasted1">Spark SQL</li><li st=
+yle=3D"color:black" class=3D"ContentPasted1">DataFrame reader, writer, tran=
+sformation, and aggregation</li><li style=3D"color:black" class=3D"ContentP=
+asted1">Datetimes</li><li style=3D"color:black" class=3D"ContentPasted1">Co=
+mplex types</li></ul>
+<ul class=3D"body-content" style=3D"margin-top:0px;margin-bottom:12px;color=
+:rgb(253, 80, 0);font-family:barlow, Helvetica, Arial, sans-serif;font-size=
+:17px;text-align:left;background-color:rgb(255, 255, 255)">
+<li style=3D"color:black" class=3D"ContentPasted1">User-defined functions (=
+UDFs) and vectorized UDFs</li><li style=3D"color:black" class=3D"ContentPas=
+ted1">Spark internals</li><li style=3D"color:black" class=3D"ContentPasted1=
+">Query optimization</li><li style=3D"color:black" class=3D"ContentPasted1"=
+>Partitioning</li><li style=3D"color:rgb(23, 78, 134)" class=3D"ContentPast=
+ed1"><span style=3D"color: rgb(23, 78, 134);">Streaming API</span></li><li =
+style=3D"color:rgb(23, 78, 134)" class=3D"ContentPasted1"><span style=3D"co=
+lor: rgb(23, 78, 134);">Delta Lake</span></li></ul>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"eleme=
+ntToProof ContentPasted0">
+<div class=3D"_Entity _EType_OWALinkPreview _EId_OWALinkPreview _EReadonly_=
+1">
+<div id=3D"LPBorder_GTaHR0cHM6Ly93d3cuZGF0YWJyaWNrcy5jb20vbGVhcm4vdHJhaW5pb=
+mcvY2F0YWxvZy9hcGFjaGUtc3BhcmstcHJvZ3JhbW1pbmc." class=3D"LPBorder814456" s=
+tyle=3D"width: 100%; margin-top: 16px; margin-bottom: 16px; position: relat=
+ive; max-width: 800px; min-width: 424px;">
+<table id=3D"LPContainer814456" role=3D"presentation" style=3D"padding: 12p=
+x 36px 12px 12px; width: 100%; border-width: 1px; border-style: solid; bord=
+er-color: rgb(200, 200, 200); border-radius: 2px;">
+<tbody>
+<tr valign=3D"top" style=3D"border-spacing: 0px;">
+<td>
+<div id=3D"LPImageContainer814456" style=3D"position: relative; margin-righ=
+t: 12px; height: 127.6px; overflow: hidden; width: 240px;">
+<a target=3D"_blank" id=3D"LPImageAnchor814456" href=3D"https://www.databri=
+cks.com/learn/training/catalog/apache-spark-programming"><img id=3D"LPThumb=
+nailImageId814456" alt=3D"" height=3D"127" style=3D"display: block;" width=
+=3D"240" src=3D"https://www.databricks.com/wp-content/uploads/2021/08/Acade=
+my-OG.jpg"></a></div>
+</td>
+<td style=3D"width: 100%;">
+<div id=3D"LPTitle814456" style=3D"font-size: 21px; font-weight: 300; margi=
+n-right: 8px; font-family: wf_segoe-ui_light, &quot;Segoe UI Light&quot;, &=
+quot;Segoe WP Light&quot;, &quot;Segoe UI&quot;, &quot;Segoe WP&quot;, Taho=
+ma, Arial, sans-serif; margin-bottom: 12px;">
+<a target=3D"_blank" id=3D"LPUrlAnchor814456" href=3D"https://www.databrick=
+s.com/learn/training/catalog/apache-spark-programming" style=3D"text-decora=
+tion: none; color: var(--themePrimary);">Apache Spark=99 Programming with D=
+atabricks =96 Databricks</a></div>
+<div id=3D"LPDescription814456" style=3D"font-size: 14px; max-height: 100px=
+; color: rgb(102, 102, 102); font-family: wf_segoe-ui_normal, &quot;Segoe U=
+I&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif; margin-bottom: 12=
+px; margin-right: 8px; overflow: hidden;">
+Description. In this course, you will explore the fundamentals of Apache Sp=
+ark and Delta Lake on Databricks. You will learn the architectural componen=
+ts of Spark, the DataFrame and Structured Streaming APIs, and how Delta Lak=
+e can improve your data pipelines.</div>
+<div id=3D"LPMetadata814456" style=3D"font-size: 14px; font-weight: 400; co=
+lor: rgb(166, 166, 166); font-family: wf_segoe-ui_normal, &quot;Segoe UI&qu=
+ot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif;">
+www.databricks.com</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
+
+--_000_DM6PR14MB3435A5B53D7CCC5DA4BD73969A3F9DM6PR14MB3435namp_--
